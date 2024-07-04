@@ -1,4 +1,3 @@
-// src/components/VideoPlayerPopup.js
 import React from 'react';
 
 function VideoPlayerPopup({ video, onClose }) {

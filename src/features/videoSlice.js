@@ -1,4 +1,3 @@
-// src/features/videoSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {

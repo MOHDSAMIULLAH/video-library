@@ -1,4 +1,3 @@
-// src/components/VideoItem.js
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleBookmark } from '../features/videoSlice';
