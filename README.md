@@ -1,6 +1,7 @@
 
 # Video Library Web App
 
+## Deployed Link: 
 ## Overview
 The Video Library Web App allows users to manage their personal collection of videos. Users can add videos from their system, view a list of all added videos, play individual videos in a popup, bookmark videos, and filter the list to show only bookmarked videos.
 
@@ -26,7 +27,7 @@ The Video Library Web App allows users to manage their personal collection of vi
 1. Clone the repository:
    ```bash
    git clone https://github.com/MOHDSAMIULLAH/video-library.git
-   cd video-library-web-app
+   cd video-library
    ```
 
 2. Install the dependencies:

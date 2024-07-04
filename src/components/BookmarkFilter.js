@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import VideoItem from './VideoItem';
+import empty from "../assets/empty.png"
 
 function BookmarkFilter() {
   const [showBookmarks, setShowBookmarks] = useState(false);
@@ -21,11 +22,21 @@ function BookmarkFilter() {
       </button>
       <p class="text-center my-4 font-medium text-slate-500">{showBookmarks ? 'Bookmarked videos' : 'List of all videos'}</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {(showBookmarks ? bookmarks : videos).map((video) => (
-          <VideoItem key={video.id} video={video} />
-        ))}
-      </div>
+  {(showBookmarks ? bookmarks : videos).length === 0 ? (
+    <img 
+      src={empty} 
+      alt="No items found" 
+      className="w-1/3 my-4" 
+    />
+  ) : (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {(showBookmarks ? bookmarks : videos).map((video) => (
+      <VideoItem key={video.id} video={video} />
+    )
+    )}
+</div>
+  )}
+
     </div>
   );
 }
