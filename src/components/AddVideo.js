@@ -27,7 +27,7 @@ function AddVideo() {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="flex flex-col items-center p-4 w-1/2 bg-white mt-12 rounded-md shadow-md">
+      <div className="flex flex-col items-center p-4 w-1/2 max-md:w-fit bg-white mt-12 rounded-md shadow-md">
         <input
           type="file"
           accept="video/*"
