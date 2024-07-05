@@ -1,25 +1,24 @@
-import React from 'react'
-import AddVideo from '../components/AddVideo'
-import VideoList from '../components/VideoList'
-import BookmarkFilter from '../components/BookmarkFilter'
+import React from "react";
+import AddVideo from "../components/AddVideo";
+import VideoList from "../components/VideoList";
+import BookmarkFilter from "../components/BookmarkFilter";
 
 const Home = () => {
   return (
     <div>
+      <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-slate-100 py-6 sm:py-12">
+        <div class="min-h-28 ">
+          <div class="max-w-screen-lg mx-auto py-4">
+            <h2 class="font-bold text-center text-6xl text-slate-700 font-display">
+              Video Library
+            </h2>
+            <AddVideo />
 
-<div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-slate-100 py-6 sm:py-12">
-  <div class="min-h-28 ">
-    <div class="max-w-screen-lg mx-auto py-4">
-      <h2 class="font-bold text-center text-6xl text-slate-700 font-display">
-        Video Library
-      </h2>
-      <AddVideo />
-
-      {/* <p class="text-center mt-12 font-medium text-slate-500">List of all videos</p>
+            {/* <p class="text-center mt-12 font-medium text-slate-500">List of all videos</p>
       <VideoList/> */}
-      <BookmarkFilter />
+            <BookmarkFilter />
 
-      {/* <div class="flex gap-6 mt-20">
+            {/* <div class="flex gap-6 mt-20">
         
         <div class="bg-white w-1/3 shadow rounded-lg overflow-hidden">
           <img src="https://loremflickr.com/320/240?random=1" class="object-cover h-52 w-full" alt="" />
@@ -123,11 +122,11 @@ const Home = () => {
           </div>
         </div>
       </div> */}
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-    </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

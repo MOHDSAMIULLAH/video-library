@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addVideo } from "../features/videoSlice";
 import { v4 as uuidv4 } from "uuid";
+import { toast } from "react-toastify";
 
 function AddVideo() {
+  const ref = useRef();
+
   const dispatch = useDispatch();
   const [videoFile, setVideoFile] = useState(null);
 
@@ -21,6 +24,8 @@ function AddVideo() {
       };
       dispatch(addVideo(videoData));
       setVideoFile(null);
+      ref.current.value = "";
+      toast("video added successfully!")
     }
   };
 
@@ -32,6 +37,7 @@ function AddVideo() {
           accept="video/*"
           onChange={handleVideoChange}
           className="mb-4"
+          ref={ref} 
         />
         <button
           onClick={handleAddVideo}
