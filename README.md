@@ -17,7 +17,7 @@ The Video Library Web App allows users to manage their personal collection of vi
 - **View Video List:** Users can see a list of all the videos they have added.
 - **Play Videos:** Users can play individual videos in a popup.
 - **Bookmark Videos:** Users can bookmark and unbookmark videos.
-- **Filter Bookmarked Videos:** Users can filter the video list to show only bookmarked videos.
+- **Filter Bookmarked Videos:** Users can filter the video list to show only bookmarked videos by clicking on "Show bookmarked video" button.
 
 ## Tech Stack
 - **Framework:** React.js
